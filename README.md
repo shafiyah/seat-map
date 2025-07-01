@@ -45,16 +45,12 @@ The system processes flight seat map data from a provided JSON file, stores it i
 #### Steps:
 ```
 # Clone project
-git clone https://github.com/shafiyah/seat-map.git
-cd seat-map/backend
-
-# Run import to load JSON data
-go run cmd/import.go
-
-# Run server
-go run cmd/server.go
-
+  git clone https://github.com/shafiyah/seat-map.git
+  cd seat-map/BE-Seat-Map-Go
+# Run the project 
+  go run cmd/import.go
 # API accessible at http://localhost:8080
+# Load data from JSON triger http://localhost:8080/flights/import-data
 ```
 
 ## Run Frontend Project 
@@ -63,13 +59,15 @@ go run cmd/server.go
 - TailwindCSS
 - Axios
 
-#### Run Frontend:
+#### Steps:
 ```
-cd seat-map/frontend
-npm install
-npm run dev
-
-# App runs at http://localhost:5173
+# Go to the frontend repository
+   cd seat-map/FE-Seat-Map-React
+# Install dependency 
+   npm install
+# Running the project 
+   npm run dev
+# App runs at http://localhost:3000
 
 ```
 ## Result Dokumentation 
